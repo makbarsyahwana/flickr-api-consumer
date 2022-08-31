@@ -16,6 +16,7 @@ export const GetImage = async (_req: any, res: any) => {
 
     } catch (e: any) {
         res.status(500).json({
+            error: true,
             message: e.message
           })
     }
